@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate Verification - GOMYCODE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <div class="hero-logo">
+                <img src="L.png" alt="GOMYCODE Logo" onerror="this.style.display='none'">
+            </div>
+            <h1 class="hero-title">Academic achievement summary</h1>
+            <h2 class="hero-subtitle">Specialization certificate</h2>
+            <h3 class="course-title">Software Development Bootcamp with AI skills</h3>
+            <div class="student-info-hero">
+                <div class="student-avatar-hero">
+                    <img src="avatar.jpg" alt="Student Avatar" onerror="this.src='https://via.placeholder.com/80?text=AA'">
+                </div>
+                <div class="student-details-hero">
+                    <p class="student-name-hero">Ahmed Achour</p>
+                    <p class="graduation-info">Graduated October 2023</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="content-section">
+        <div class="content-container">
+            <!-- Left Column - Certificate -->
+            <div class="left-column">
+                <div class="certificate-card-large">
+                    <img src="certifs1.png" class="certificate-image-large" alt="Certificate">
+                </div>
+            </div>
+
+            <!-- Right Column - Course Info -->
+            <div class="right-column">
+                <div class="course-info">
+                    <h4 class="course-title-small">Software Development Bootcamp with AI skills</h4>
+                    <p class="course-code">S 202</p>
+                    <button class="learn-more-btn-large">Learn more</button>
+                </div>
+
+                <div class="skills-card">
+                    <h5 class="skills-title">Curriculum Skills completion</h5>
+                    <div class="carousel-container">
+                        <button class="carousel-arrow carousel-arrow-left" onclick="prevSlide()">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="15 18 9 12 15 6"></polyline>
+                            </svg>
+                        </button>
+                        <div class="carousel-content">
+                            <div class="carousel-slide active" data-slide="0">
+                                <h6 class="slide-title">Web Fundamentals</h6>
+                                <ul class="skills-list">
+                                    <li class="skill-item"><span class="skill-icon">⚡</span><span>Welcome to GOMYCODE</span></li>
+                                    <li class="skill-item"><span class="skill-icon">⚡</span><span>Intro to the Web</span></li>
+                                    <li class="skill-item"><span class="skill-icon">⚡</span><span>HTML5</span></li>
+                                    <li class="skill-item"><span class="skill-icon">⚡</span><span>CSS3</span></li>
+                                    <li class="skill-item"><span class="skill-icon">⚡</span><span>Responsive Design</span></li>
+                                    <li class="skill-item"><span class="skill-icon">⚡</span><span>Git & GitHub</span></li>
+                                </ul>
+                            </div>
+                            <div class="carousel-slide" data-slide="1">
+                                <h6 class="slide-title">JavaScript</h6>
+                                <ul class="skills-list">
+                                    <li class="skill-item"><span class="skill-icon">⚡</span><span>JavaScript Fundamentals</span></li>
+                                    <li class="skill-item"><span class="skill-icon">⚡</span><span>DOM Manipulation</span></li>
+                                    <li class="skill-item"><span class="skill-icon">⚡</span><span>ES6+</span></li>
+                                    <li class="skill-item"><span class="skill-icon">⚡</span><span>Asynchronous JavaScript</span></li>
+                                    <li class="skill-item"><span class="skill-icon">⚡</span><span>Fetch API</span></li>
+                                    <li class="skill-item"><span class="skill-icon">⚡</span><span>Local Storage</span></li>
+                                </ul>
+                            </div>
+                            <div class="carousel-slide" data-slide="2">
+                                <h6 class="slide-title">Frontend</h6>
+                                <ul class="skills-list">
+                                    <li class="skill-item"><span class="skill-icon">⚡</span><span>React Fundamentals</span></li>
+                                    <li class="skill-item"><span class="skill-icon">⚡</span><span>Components</span></li>
+                                    <li class="skill-item"><span class="skill-icon">⚡</span><span>State Management</span></li>
+                                    <li class="skill-item"><span class="skill-icon">⚡</span><span>Routing</span></li>
+                                    <li class="skill-item"><span class="skill-icon">⚡</span><span>Forms & Validation</span></li>
+                                    <li class="skill-item"><span class="skill-icon">⚡</span><span>API Integration</span></li>
+                                </ul>
+                            </div>
+                            <div class="carousel-slide" data-slide="3">
+                                <h6 class="slide-title">Backend</h6>
+                                <ul class="skills-list">
+                                    <li class="skill-item"><span class="skill-icon">⚡</span><span>Node.js</span></li>
+                                    <li class="skill-item"><span class="skill-icon">⚡</span><span>Express.js</span></li>
+                                    <li class="skill-item"><span class="skill-icon">⚡</span><span>REST API</span></li>
+                                    <li class="skill-item"><span class="skill-icon">⚡</span><span>Postman</span></li>
+                                    <li class="skill-item"><span class="skill-icon">⚡</span><span>Authentication (JWT)</span></li>
+                                    <li class="skill-item"><span class="skill-icon">⚡</span><span>File Upload</span></li>
+                                </ul>
+                            </div>
+                            <div class="carousel-slide" data-slide="4">
+                                <h6 class="slide-title">Database</h6>
+                                <ul class="skills-list">
+                                    <li class="skill-item"><span class="skill-icon">⚡</span><span>MongoDB</span></li>
+                                    <li class="skill-item"><span class="skill-icon">⚡</span><span>Mongoose</span></li>
+                                    <li class="skill-item"><span class="skill-icon">⚡</span><span>CRUD Operations</span></li>
+                                    <li class="skill-item"><span class="skill-icon">⚡</span><span>Data Modeling</span></li>
+                                    <li class="skill-item"><span class="skill-icon">⚡</span><span>Aggregation</span></li>
+                                    <li class="skill-item"><span class="skill-icon">⚡</span><span>Database Relationships</span></li>
+                                </ul>
+                            </div>
+                            <div class="carousel-slide" data-slide="5">
+                                <h6 class="slide-title">Deployment & Career</h6>
+                                <ul class="skills-list">
+                                    <li class="skill-item"><span class="skill-icon">⚡</span><span>Cloud Fundamentals</span></li>
+                                    <li class="skill-item"><span class="skill-icon">⚡</span><span>Vercel Deployment</span></li>
+                                    <li class="skill-item"><span class="skill-icon">⚡</span><span>GitHub Workflow</span></li>
+                                    <li class="skill-item"><span class="skill-icon">⚡</span><span>LinkedIn Optimization</span></li>
+                                    <li class="skill-item"><span class="skill-icon">⚡</span><span>Professional Resume</span></li>
+                                    <li class="skill-item"><span class="skill-icon">⚡</span><span>Technical Interview Preparation</span></li>
+                                </ul>
+                            </div>
+                            <div class="carousel-slide" data-slide="6">
+                                <h6 class="slide-title">Professional Skills</h6>
+                                <ul class="skills-list">
+                                    <li class="skill-item"><span class="skill-icon">⚡</span><span>Agile & SCRUM</span></li>
+                                    <li class="skill-item"><span class="skill-icon">⚡</span><span>Team Collaboration</span></li>
+                                    <li class="skill-item"><span class="skill-icon">⚡</span><span>Software Architecture Basics</span></li>
+                                    <li class="skill-item"><span class="skill-icon">⚡</span><span>Debugging Techniques</span></li>
+                                    <li class="skill-item"><span class="skill-icon">⚡</span><span>Best Coding Practices</span></li>
+                                    <li class="skill-item"><span class="skill-icon">⚡</span><span>Final Project Presentation</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="carousel-arrow carousel-arrow-right" onclick="nextSlide()">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="carousel-dots">
+                        <span class="dot active" onclick="goToSlide(0)"></span>
+                        <span class="dot" onclick="goToSlide(1)"></span>
+                        <span class="dot" onclick="goToSlide(2)"></span>
+                        <span class="dot" onclick="goToSlide(3)"></span>
+                        <span class="dot" onclick="goToSlide(4)"></span>
+                        <span class="dot" onclick="goToSlide(5)"></span>
+                        <span class="dot" onclick="goToSlide(6)"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+        <div class="footer-container">
+            <p class="footer-text">
+                This certificate above verifies that <span class="highlight">Ahmed Seffah</span>, born on Tue, Aug 19th 2003, successfully completed the course <span class="highlight">Software Development Bootcamp with AI skills</span> on <span class="highlight">22nd Nov 2025</span> as taught by <span class="highlight">GoMyCode</span>. The certificate indicates the entire course was completed as validated by the student. The course duration represents the total cohort duration, involving both presence and online learning of the course based on the date of most recent completion.
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

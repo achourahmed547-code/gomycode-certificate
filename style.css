@@ -1,0 +1,636 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: #e23644;
+    color: white;
+    padding: 30px 0 20px 0;
+    position: relative;
+}
+
+.hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 60px;
+}
+
+.hero-logo {
+    position: absolute;
+    top: 40px;
+    right: 80px;
+    background: transparent;
+    width: auto;
+    height: auto;
+}
+
+.hero-logo img {
+    display: block;
+    height: 55px;
+    width: auto;
+    max-width: none;
+    object-fit: contain;
+    filter: none;
+}
+
+.hero-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    letter-spacing: -0.5px;
+    max-width: 800px;
+}
+
+.hero-subtitle {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    opacity: 0.95;
+}
+
+.course-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    line-height: 1.2;
+}
+
+.student-info-hero {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.student-avatar-hero img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+}
+
+.student-details-hero {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.student-name-hero {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.graduation-info {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* Content Section */
+.content-section {
+    padding: 20px 0 60px 0;
+    background-color: #e23644;
+    margin-top: -10px;
+    position: relative;
+    z-index: 10;
+}
+
+.content-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 60px;
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+    gap: 30px;
+}
+
+/* Left Column - Certificate */
+.left-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.certificate-card-large {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 15px;
+    margin-left: 20px;
+}
+
+.certificate-image-large {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+    object-fit: contain;
+}
+
+/* Right Column - Course Info */
+.right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.course-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.course-title-small {
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+    line-height: 1.3;
+}
+
+.course-code {
+    font-size: 16px;
+    font-weight: 600;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.learn-more-btn-large {
+    padding: 14px 28px;
+    background: white;
+    color: #E30613;
+    border: 2px solid #E30613;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    align-self: flex-start;
+}
+
+.learn-more-btn-large:hover {
+    background: #E30613;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(227, 6, 19, 0.3);
+}
+
+/* Skills Card */
+.skills-card {
+    background: #E30613;
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 8px 30px rgba(227, 6, 19, 0.2);
+    position: relative;
+}
+
+.skills-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 15px;
+}
+
+/* Carousel Container */
+.carousel-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+}
+
+.carousel-content {
+    flex: 1;
+    position: relative;
+    min-height: 240px;
+}
+
+.carousel-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.carousel-slide.active {
+    opacity: 1;
+    visibility: visible;
+    position: relative;
+}
+
+.slide-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 12px;
+    opacity: 0.95;
+}
+
+.skills-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.skill-icon {
+    font-size: 16px;
+}
+
+/* Carousel Arrows */
+.carousel-arrow {
+    background: rgba(255, 255, 255, 0.15);
+    border: none;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: white;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+    z-index: 10;
+}
+
+.carousel-arrow:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: scale(1.1);
+}
+
+.carousel-arrow:active {
+    transform: scale(0.95);
+}
+
+.carousel-arrow svg {
+    transition: transform 0.3s ease;
+}
+
+.carousel-arrow:hover svg {
+    transform: scale(1.1);
+}
+
+.carousel-arrow-left {
+    margin-right: 5px;
+}
+
+.carousel-arrow-right {
+    margin-left: 5px;
+}
+
+/* Carousel Dots */
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dot:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.dot.active {
+    background: white;
+    transform: scale(1.2);
+}
+
+/* Responsive Design - Tablet */
+@media (max-width: 1024px) {
+    .hero-section {
+        padding: 35px 30px 25px 30px;
+    }
+
+    .hero-logo img {
+        height: 70px;
+    }
+
+    .hero-title {
+        font-size: 32px;
+    }
+
+    .hero-subtitle {
+        font-size: 22px;
+    }
+
+    .course-title {
+        font-size: 28px;
+    }
+
+    .content-section {
+        padding: 25px 30px 50px 30px;
+    }
+
+    .content-container {
+        gap: 25px;
+    }
+
+    .course-title-small {
+        font-size: 18px;
+    }
+
+    .carousel-arrow {
+        width: 38px;
+        height: 38px;
+    }
+
+    .carousel-content {
+        min-height: 220px;
+    }
+
+    .slide-title {
+        font-size: 15px;
+    }
+
+    .skill-item {
+        font-size: 13px;
+    }
+}
+
+/* Responsive Design - Mobile */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 30px 20px 20px 20px;
+    }
+
+    .hero-logo {
+        position: relative;
+        top: 0;
+        right: 0;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .hero-logo img {
+        height: 60px;
+    }
+
+    .hero-title {
+        font-size: 28px;
+    }
+
+    .hero-subtitle {
+        font-size: 20px;
+    }
+
+    .course-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .student-info-hero {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .student-avatar-hero img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .content-section {
+        padding: 20px 20px 40px 20px;
+        margin-top: -15px;
+    }
+
+    .content-container {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .certificate-card-large {
+        padding: 12px;
+    }
+
+    .skills-card {
+        padding: 20px;
+    }
+
+    .skills-title {
+        font-size: 16px;
+    }
+
+    .skill-item {
+        font-size: 14px;
+    }
+
+    .carousel-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .carousel-arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .carousel-arrow-left {
+        left: -15px;
+        margin-right: 0;
+    }
+
+    .carousel-arrow-right {
+        right: -15px;
+        margin-left: 0;
+    }
+
+    .carousel-content {
+        min-height: 200px;
+    }
+
+    .slide-title {
+        font-size: 15px;
+    }
+
+    .skill-item {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section {
+        padding: 25px 15px 15px 15px;
+    }
+
+    .hero-logo img {
+        height: 50px;
+    }
+
+    .hero-title {
+        font-size: 24px;
+    }
+
+    .hero-subtitle {
+        font-size: 18px;
+    }
+
+    .course-title {
+        font-size: 20px;
+    }
+
+    .student-name-hero {
+    font-size: 18px;
+    }
+
+    .graduation-info {
+        font-size: 13px;
+    }
+
+    .content-section {
+        padding: 15px 15px 30px 15px;
+    }
+
+    .course-title-small {
+        font-size: 16px;
+    }
+
+    .course-code {
+        font-size: 14px;
+    }
+
+    .learn-more-btn-large {
+        width: 100%;
+        padding: 12px 20px;
+    }
+
+    .skills-card {
+        padding: 18px;
+    }
+
+    .carousel-arrow {
+        width: 34px;
+        height: 34px;
+    }
+
+    .carousel-arrow-left {
+        left: -10px;
+    }
+
+    .carousel-arrow-right {
+        right: -10px;
+    }
+
+    .carousel-content {
+        min-height: 180px;
+    }
+
+    .slide-title {
+        font-size: 14px;
+    }
+
+    .skill-item {
+        font-size: 12px;
+        gap: 8px;
+    }
+
+    .skill-icon {
+        font-size: 14px;
+    }
+}
+
+/* Footer Section */
+.footer-section {
+    background-color: #FFFFFF;
+    padding: 60px 0;
+    width: 100%;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 60px;
+}
+
+.footer-text {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #222;
+    max-width: 700px;
+    text-align: left;
+}
+
+.footer-text .highlight {
+    color: #E30613;
+    font-weight: 600;
+}
+
+/* Responsive Design - Footer */
+@media (max-width: 1024px) {
+    .footer-section {
+        padding: 50px 0;
+    }
+
+    .footer-container {
+        padding: 0 30px;
+    }
+
+    .footer-text {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-section {
+        padding: 40px 0;
+    }
+
+    .footer-container {
+        padding: 0 20px;
+    }
+
+    .footer-text {
+        font-size: 14px;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-section {
+        padding: 30px 0;
+    }
+
+    .footer-container {
+        padding: 0 15px;
+    }
+
+    .footer-text {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+}
